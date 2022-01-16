@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="prompt_email">Enter Email</string>
+    <string name="prompt_password">Enter Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="action_register">Register</string>
+    <string name="click_to_sign_in">Click to Login</string>
+    <string name="email_error">Enter a valid email</string>
+    <string name="password_error">Enter a valid password</string>
+    <string name="logout">Logout</string>
+</resources>

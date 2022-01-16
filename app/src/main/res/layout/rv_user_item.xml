@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.project.models.User" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:id="@+id/user_name_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{user.name,default=`User Name`}"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/user_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/user_name_tv"
+            android:text="@{user.email,default=`User Email`}"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/user_email_tv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#E1DFDF"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
