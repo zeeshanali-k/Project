@@ -8,6 +8,15 @@ public class User implements Parcelable {
     private String password;
     private String name;
 
+    public User(String email, String password, String name, String profileImg) {
+        this.email = email;
+        this.password = password;
+        this.name = name;
+        this.profileImg = profileImg;
+    }
+
+    private String profileImg;
+
     public User() {
     }
 
@@ -79,4 +88,12 @@ public class User implements Parcelable {
             return new User[size];
         }
     };
+
+    public String getProfileImg() {
+        return profileImg;
+    }
+
+    public void setProfileImg(String profileImg) {
+        this.profileImg = profileImg;
+    }
 }

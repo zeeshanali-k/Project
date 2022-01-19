@@ -1,5 +1,6 @@
 package com.project.adapters;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -7,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.project.databinding.RvUserItemBinding;
 import com.project.models.User;
 
@@ -31,9 +33,15 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersHolder>
         );
     }
 
+    private static final String TAG = "UsersAdapter";
     @Override
     public void onBindViewHolder(@NonNull UsersHolder holder, int position) {
         holder.rvBinding.setUser(userList.get(position));
+        Log.d(TAG, "onBindViewHolder: "+userList.get(position).getProfileImg());
+        Glide.with(holder.rvBinding.getRoot())
+                .load(userList.get(position).getProfileImg())
+                .centerCrop()
+                .into(holder.rvBinding.userImg);
         holder.rvBinding.executePendingBindings();
     }
 

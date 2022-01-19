@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/layout/activity_login.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/drawable/less_round_hallow_blue.xml" value="0.20923076923076922" />
+        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/font/poppins.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main.xml" value="0.19635416666666666" />
-        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/layout/rv_user_item.xml" value="0.33" />
+        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/layout/rv_user_item.xml" value="0.2" />
         <entry key="..\:/Users/ZK/AndroidStudioProjects/Project/app/src/main/res/menu/main_menu.xml" value="0.19635416666666666" />
       </map>
     </option>
